@@ -32,13 +32,12 @@ public class HealthBar : MonoBehaviour
         this.maxHp = maxHp;
         hp = maxHp;
         // set luong mau la 100% 
-        imageFill.fillAmount = 1; 
+        imageFill.fillAmount = 1;
     }
     
     public void setNewHp(float hp)
     {
         this.hp = hp;
-        //imageFill.fillAmount = hp / maxHp; 
     }
 
 }

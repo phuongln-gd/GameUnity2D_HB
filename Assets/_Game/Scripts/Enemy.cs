@@ -43,11 +43,11 @@ public class Enemy : Character
     }
 
     //enmy die
-    protected override void OnDeath()
+    public override void OnDeath()
     {
         currentState = null;
-        ChangeAnim("die");
-        Invoke(nameof(OnDespawn),1f);
+        base.OnDeath();
+        Invoke(nameof(OnDespawn), 1f);
     }
 
     //thay doi trang thai enemy

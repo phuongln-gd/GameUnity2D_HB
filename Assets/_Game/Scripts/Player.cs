@@ -135,10 +135,10 @@ public class Player : Character
     }
 
     // khi player chet
-    protected override void OnDeath()
+    public override void OnDeath()
     {
         base.OnDeath();
-        OnInit();
+        Invoke(nameof(OnInit),1f);
     }
 
     // kiem tra player duoi dat 
@@ -203,7 +203,7 @@ public class Player : Character
     //cai dat lai tan cong
     public void ResetAttack()
     {
-        ChangeAnim("ilde");
+        ChangeAnim("idle");
         isAttack = false;
     }
 

@@ -36,7 +36,7 @@ public class Kunai : MonoBehaviour
             collision.GetComponent<Character>().OnHit(30f);
             // tao ra hitVFX tai vi tri va cham theo chieu cua kunai
             Instantiate(hitVFX,transform.position,transform.rotation);
-            OnDespawn();
+            OnDespawn(); // tu huy dao
         }
     }
 
